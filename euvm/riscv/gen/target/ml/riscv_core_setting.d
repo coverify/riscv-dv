@@ -41,11 +41,11 @@ riscv_instr_name_t[] unsupported_instr = [];
 
 // ISA supported by the processor
 riscv_instr_group_t[] supported_isa = [riscv_instr_group_t.RV32I,
-				                               riscv_instr_group_t.RV32M,
-				                               riscv_instr_group_t.RV32C,
-				                               riscv_instr_group_t.RV64I,
-				                               riscv_instr_group_t.RV64M,
-				                               riscv_instr_group_t.RV64C];
+				       riscv_instr_group_t.RV32M,
+				       riscv_instr_group_t.RV32C,
+				       riscv_instr_group_t.RV64I,
+				       riscv_instr_group_t.RV64M,
+				       riscv_instr_group_t.RV64C];
 
 // Interrupt mode support
 mtvec_mode_t[] supported_interrupt_mode = [mtvec_mode_t.DIRECT,
@@ -135,12 +135,12 @@ ubvec!12[] custom_csr = [];
 // ----------------------------------------------------------------------------
 
 enum interrupt_cause_t[] implemented_interrupt = [interrupt_cause_t.M_SOFTWARE_INTR,
-						                                      interrupt_cause_t.M_TIMER_INTR,
-						                                      interrupt_cause_t.M_EXTERNAL_INTR];
+						  interrupt_cause_t.M_TIMER_INTR,
+						  interrupt_cause_t.M_EXTERNAL_INTR];
 
 enum exception_cause_t[] implemented_exception = [exception_cause_t.INSTRUCTION_ACCESS_FAULT,
-						                                      exception_cause_t.ILLEGAL_INSTRUCTION,
-						                                      exception_cause_t.BREAKPOINT,
-						                                      exception_cause_t.LOAD_ADDRESS_MISALIGNED,
-						                                      exception_cause_t.LOAD_ACCESS_FAULT,
-						                                      exception_cause_t.ECALL_MMODE];
+						  exception_cause_t.ILLEGAL_INSTRUCTION,
+						  exception_cause_t.BREAKPOINT,
+						  exception_cause_t.LOAD_ADDRESS_MISALIGNED,
+						  exception_cause_t.LOAD_ACCESS_FAULT,
+						  exception_cause_t.ECALL_MMODE];
