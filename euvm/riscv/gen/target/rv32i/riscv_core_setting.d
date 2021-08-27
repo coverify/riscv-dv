@@ -131,13 +131,13 @@ ubvec!12[] custom_csr = [];
 // ----------------------------------------------------------------------------
 
 enum interrupt_cause_t[] implemented_interrupt = [interrupt_cause_t.M_SOFTWARE_INTR,
-						                                      interrupt_cause_t.M_TIMER_INTR,
-					                                    	  interrupt_cause_t.M_EXTERNAL_INTR];
+						  interrupt_cause_t.M_TIMER_INTR,
+					          interrupt_cause_t.M_EXTERNAL_INTR];
 
 enum exception_cause_t[] implemented_exception = [exception_cause_t.INSTRUCTION_ADDRESS_MISALIGNED,
                                                   exception_cause_t.INSTRUCTION_ACCESS_FAULT,
-						                                      exception_cause_t.ILLEGAL_INSTRUCTION,
-			                                     			  exception_cause_t.BREAKPOINT,
-				                                     		  exception_cause_t.LOAD_ADDRESS_MISALIGNED,
+						  exception_cause_t.ILLEGAL_INSTRUCTION,
+			                          exception_cause_t.BREAKPOINT,
+				                  exception_cause_t.LOAD_ADDRESS_MISALIGNED,
                                                   exception_cause_t.LOAD_ACCESS_FAULT,
-						                                      exception_cause_t.ECALL_MMODE];
+						  exception_cause_t.ECALL_MMODE];
